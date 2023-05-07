@@ -9,7 +9,7 @@ public class UserStateData
     public long Id { get; set; }
     
     [Column("code")]
-    public string Code { get; set; }
+    public StateCode Code { get; set; }
     
     [Column("description")]
     public string Description { get; set; }
