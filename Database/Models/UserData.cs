@@ -14,7 +14,7 @@ public class UserData
     public String Login { get; set; }
     
     [Column("password")]
-    public String Password { get; set; }
+    public String PasswordHashString { get; set; }
     
     [Column("created_date")]
     public String CreatedDate { get; set; }

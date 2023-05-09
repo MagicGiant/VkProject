@@ -6,25 +6,30 @@ public class UserStateTransaction : ITransactions<UserStateData>
 {
     public void Save(UserStateData entity)
     {
-        using (AppContext appContext = new AppContext())
+        using (MyContext myContext = new MyContext())
         {
-            appContext.UserStatesData.Add(entity);
-            appContext.SaveChanges();
+            myContext.UserStatesData.Add(entity);
+            myContext.SaveChanges();
         }
     }
 
     public void Delete(UserStateData entity)
     {
-        using (AppContext context = new AppContext())
+        using (MyContext context = new MyContext())
         {
             context.UserStatesData.Remove(entity);
             context.SaveChanges();
         }
     }
 
+    public void Delete(long id)
+    {
+        Delete(GetById(id));
+    }
+
     public UserStateData GetById(long id)
     {
-        using (AppContext context = new AppContext())
+        using (MyContext context = new MyContext())
         {
             return context.UserStatesData.Find(id);
         }
@@ -32,9 +37,17 @@ public class UserStateTransaction : ITransactions<UserStateData>
 
     public void Update(UserStateData entity)
     {
-        using (AppContext context = new AppContext())
+        using (MyContext context = new MyContext())
         {
             context.UserStatesData.Find(entity);
+        }
+    }
+
+    public ICollection<UserStateData> GetAll()
+    {
+        using (MyContext context = new MyContext())
+        {
+            return context.UserStatesData.ToList();
         }
     }
 }

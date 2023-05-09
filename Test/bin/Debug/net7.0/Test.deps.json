@@ -11,7 +11,6 @@
           "BusinessLayer": "1.0.0",
           "Database": "1.0.0",
           "Microsoft.NET.Test.Sdk": "17.5.0",
-          "PresentationLayer": "1.0.0",
           "xunit": "2.5.0-pre.11",
           "xunit.runner.visualstudio": "2.4.5"
         },
@@ -1196,15 +1195,6 @@
         "runtime": {
           "Database.dll": {}
         }
-      },
-      "PresentationLayer/1.0.0": {
-        "dependencies": {
-          "BusinessLayer": "1.0.0",
-          "Database": "1.0.0"
-        },
-        "runtime": {
-          "PresentationLayer.dll": {}
-        }
       }
     }
   },
@@ -1941,11 +1931,6 @@
       "sha512": ""
     },
     "Database/1.0.0": {
-      "type": "project",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "PresentationLayer/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

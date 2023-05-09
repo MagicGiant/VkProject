@@ -2000,20 +2000,6 @@
         "runtime": {
           "bin/placeholder/Database.dll": {}
         }
-      },
-      "PresentationLayer/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v7.0",
-        "dependencies": {
-          "BusinessLayer": "1.0.0",
-          "Database": "1.0.0"
-        },
-        "compile": {
-          "bin/placeholder/PresentationLayer.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/PresentationLayer.dll": {}
-        }
       }
     }
   },
@@ -6177,11 +6163,6 @@
       "type": "project",
       "path": "../Database/Database.csproj",
       "msbuildProject": "../Database/Database.csproj"
-    },
-    "PresentationLayer/1.0.0": {
-      "type": "project",
-      "path": "../PresentationLayer/PresentationLayer.csproj",
-      "msbuildProject": "../PresentationLayer/PresentationLayer.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -6189,7 +6170,6 @@
       "BusinessLayer >= 1.0.0",
       "Database >= 1.0.0",
       "Microsoft.NET.Test.Sdk >= 17.5.0",
-      "PresentationLayer >= 1.0.0",
       "xunit >= 2.5.0-pre.11",
       "xunit.runner.visualstudio >= 2.4.5"
     ]
@@ -6224,9 +6204,6 @@
             },
             "C:\\Users\\Obidj\\MyDirect\\work_4sm\\myProgect\\VkProject\\Database\\Database.csproj": {
               "projectPath": "C:\\Users\\Obidj\\MyDirect\\work_4sm\\myProgect\\VkProject\\Database\\Database.csproj"
-            },
-            "C:\\Users\\Obidj\\MyDirect\\work_4sm\\myProgect\\VkProject\\PresentationLayer\\PresentationLayer.csproj": {
-              "projectPath": "C:\\Users\\Obidj\\MyDirect\\work_4sm\\myProgect\\VkProject\\PresentationLayer\\PresentationLayer.csproj"
             }
           }
         }

@@ -1,4 +1,5 @@
-﻿using Database.Entities;
+﻿using BusinessLayer.Entities;
+using Database.Entities;
 using Database.Models;
 using Database.Transactions;
 using Xunit;
@@ -12,13 +13,26 @@ public class DatabaseTests
     public void SaveUserGroup_NoException()
     {
         UserGroupData userGroupData = new UserGroupData { Code = GroupCode.User, Description = "lol" };
-        UserGroupTransactions transactions = new UserGroupTransactions();
-        transactions.Save(userGroupData);
+        UserGroupTransaction transaction = new UserGroupTransaction();
+        transaction.Save(userGroupData);
     }
 
     [Fact]
     public void CreateEnumWithConverter_NoException()
     {
         StringToEnumConverter<GroupCode>.Execute(GroupCode.User.ToString());
+    }
+
+    [Fact]
+    public void SaveUser_NoException()
+    {
+        UserBuilder userBuilder = new UserBuilder();
+        userBuilder
+            .SetLogin(new Login("Sherka"))
+            .SetPassword(new Password("Root"))
+            .SetGroupCode(GroupCode.User)
+            .SetGroupDestruction("a")
+            .SetStateDestruction("b")
+            .Build();
     }
 }
