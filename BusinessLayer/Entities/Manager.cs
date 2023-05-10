@@ -80,6 +80,27 @@ public static class Manager
         UserBuilder builder = new ();
     }
 
+    public static void UpdateUser(User user)
+    {
+        using (MyContext context = new MyContext())
+        {
+            using (var transaction = context.Database.BeginTransaction())
+            {
+                try
+                {
+                    new UserDataTransaction().Update(user.UserData);
+                    new UserGroupTransaction().Update(user.UserGroupData);
+                    new UserStateTransaction().Update(user.UserStateData);
+                }
+                catch (Exception e)
+                {
+                    transaction.Rollback();
+                    throw e;
+                }
+            }
+        }
+    }
+
     public static void MakeActive(Login login)
     {
         GetUser(login).MakeActive();

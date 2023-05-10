@@ -1,0 +1,27 @@
+﻿@using Microsoft.EntityFrameworkCore.Metadata.Internal
+@{
+    Layout = null;
+}
+ 
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>User</title>
+</head>
+<body>
+<div>
+    <form method="post" action="">
+    <tr>
+        <td>
+            <p><a href="/Home/SingIn">Exit to menu</a></p></td>
+        <td>
+            <p><a>@ViewBag.JsonString</a></p></td>
+        <td>
+            <p><a><input type="submit" value="Block-Unlock"/></a></p></td>
+    </tr>
+    </form>
+</div>
+</body>
+</html>

@@ -40,9 +40,33 @@ public class HomeController : Controller
     }
 
     [HttpPost]
-    public string SingIn(SingInPasswordAndLogin data)
+    public ActionResult SingIn(SingInPasswordAndLogin data)
     {
-        User user = Manager.GetUserAndCheckPassword(new Login(data.Login), new Password(data.Password));
-        return JsonSerializer.Serialize(user);
+        Manager.GetUserAndCheckPassword(new Login(data.Login), new Password(data.Password));
+        return RedirectToAction("User", "Home",  new { login = data.Login });
+    }
+    
+    [HttpGet]
+    public ActionResult User(string login)
+    {
+        ViewBag.JsonString =JsonSerializer
+            .Serialize(Manager.GetUser(new Login(login)), new JsonSerializerOptions { WriteIndented = true });
+        TempData["login"] = login;
+        return View();
+    }
+
+    [HttpPost]
+    public ActionResult User()
+    {
+        string login = TempData["login"].ToString();
+        User user = Manager.GetUser(new Login(login));
+        
+        if (user.UserStateData.Code == StateCode.Blocked)
+            user.UserStateData.Code = StateCode.Active;
+        else
+            user.UserStateData.Code = StateCode.Blocked;
+        
+        Manager.UpdateUser(user);
+        return RedirectToAction("User", new { login = login });
     }
 }
