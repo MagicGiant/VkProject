@@ -6,7 +6,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Database", "Database\Databa
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test", "Test\Test.csproj", "{7FA78C23-E746-40BD-BE1F-CE3BDB89BB5F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "App", "App\App.csproj", "{F03DCB1B-62CF-44AE-884D-633718B0DC8A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Presentation Layer", "Presentation Layer\Presentation Layer.csproj", "{F03DCB1B-62CF-44AE-884D-633718B0DC8A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

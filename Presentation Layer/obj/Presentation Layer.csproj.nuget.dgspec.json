@@ -1,0 +1,190 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\Obidj\\MyDirect\\work_4sm\\myProgect\\VkProject\\Presentation Layer\\Presentation Layer.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\Obidj\\MyDirect\\work_4sm\\myProgect\\VkProject\\BusinessLayer\\BusinessLayer.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Obidj\\MyDirect\\work_4sm\\myProgect\\VkProject\\BusinessLayer\\BusinessLayer.csproj",
+        "projectName": "BusinessLayer",
+        "projectPath": "C:\\Users\\Obidj\\MyDirect\\work_4sm\\myProgect\\VkProject\\BusinessLayer\\BusinessLayer.csproj",
+        "packagesPath": "C:\\Users\\Obidj\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Obidj\\MyDirect\\work_4sm\\myProgect\\VkProject\\BusinessLayer\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Obidj\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "C:\\Users\\Obidj\\MyDirect\\work_4sm\\myProgect\\VkProject\\Database\\Database.csproj": {
+                "projectPath": "C:\\Users\\Obidj\\MyDirect\\work_4sm\\myProgect\\VkProject\\Database\\Database.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "Npgsql.EntityFrameworkCore.PostgreSQL": {
+              "target": "Package",
+              "version": "[8.0.0-preview.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Users\\Obidj\\.dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Obidj\\MyDirect\\work_4sm\\myProgect\\VkProject\\Database\\Database.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Obidj\\MyDirect\\work_4sm\\myProgect\\VkProject\\Database\\Database.csproj",
+        "projectName": "Database",
+        "projectPath": "C:\\Users\\Obidj\\MyDirect\\work_4sm\\myProgect\\VkProject\\Database\\Database.csproj",
+        "packagesPath": "C:\\Users\\Obidj\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Obidj\\MyDirect\\work_4sm\\myProgect\\VkProject\\Database\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Obidj\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "Npgsql.EntityFrameworkCore.PostgreSQL": {
+              "target": "Package",
+              "version": "[8.0.0-preview.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Users\\Obidj\\.dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Obidj\\MyDirect\\work_4sm\\myProgect\\VkProject\\Presentation Layer\\Presentation Layer.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Obidj\\MyDirect\\work_4sm\\myProgect\\VkProject\\Presentation Layer\\Presentation Layer.csproj",
+        "projectName": "Presentation Layer",
+        "projectPath": "C:\\Users\\Obidj\\MyDirect\\work_4sm\\myProgect\\VkProject\\Presentation Layer\\Presentation Layer.csproj",
+        "packagesPath": "C:\\Users\\Obidj\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Obidj\\MyDirect\\work_4sm\\myProgect\\VkProject\\Presentation Layer\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Obidj\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "C:\\Users\\Obidj\\MyDirect\\work_4sm\\myProgect\\VkProject\\BusinessLayer\\BusinessLayer.csproj": {
+                "projectPath": "C:\\Users\\Obidj\\MyDirect\\work_4sm\\myProgect\\VkProject\\BusinessLayer\\BusinessLayer.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Users\\Obidj\\.dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

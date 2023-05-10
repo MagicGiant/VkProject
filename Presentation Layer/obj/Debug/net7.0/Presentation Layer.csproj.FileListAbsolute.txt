@@ -1,0 +1,48 @@
+C:\Users\Obidj\MyDirect\work_4sm\myProgect\VkProject\Presentation Layer\bin\Debug\net7.0\appsettings.Development.json
+C:\Users\Obidj\MyDirect\work_4sm\myProgect\VkProject\Presentation Layer\bin\Debug\net7.0\appsettings.json
+C:\Users\Obidj\MyDirect\work_4sm\myProgect\VkProject\Presentation Layer\bin\Debug\net7.0\Presentation Layer.staticwebassets.runtime.json
+C:\Users\Obidj\MyDirect\work_4sm\myProgect\VkProject\Presentation Layer\bin\Debug\net7.0\Presentation Layer.exe
+C:\Users\Obidj\MyDirect\work_4sm\myProgect\VkProject\Presentation Layer\bin\Debug\net7.0\Presentation Layer.deps.json
+C:\Users\Obidj\MyDirect\work_4sm\myProgect\VkProject\Presentation Layer\bin\Debug\net7.0\Presentation Layer.runtimeconfig.json
+C:\Users\Obidj\MyDirect\work_4sm\myProgect\VkProject\Presentation Layer\bin\Debug\net7.0\Presentation Layer.dll
+C:\Users\Obidj\MyDirect\work_4sm\myProgect\VkProject\Presentation Layer\bin\Debug\net7.0\Presentation Layer.pdb
+C:\Users\Obidj\MyDirect\work_4sm\myProgect\VkProject\Presentation Layer\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\Obidj\MyDirect\work_4sm\myProgect\VkProject\Presentation Layer\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\Obidj\MyDirect\work_4sm\myProgect\VkProject\Presentation Layer\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\Obidj\MyDirect\work_4sm\myProgect\VkProject\Presentation Layer\bin\Debug\net7.0\Microsoft.Extensions.Caching.Abstractions.dll
+C:\Users\Obidj\MyDirect\work_4sm\myProgect\VkProject\Presentation Layer\bin\Debug\net7.0\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\Obidj\MyDirect\work_4sm\myProgect\VkProject\Presentation Layer\bin\Debug\net7.0\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\Obidj\MyDirect\work_4sm\myProgect\VkProject\Presentation Layer\bin\Debug\net7.0\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\Obidj\MyDirect\work_4sm\myProgect\VkProject\Presentation Layer\bin\Debug\net7.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\Obidj\MyDirect\work_4sm\myProgect\VkProject\Presentation Layer\bin\Debug\net7.0\Microsoft.Extensions.Logging.dll
+C:\Users\Obidj\MyDirect\work_4sm\myProgect\VkProject\Presentation Layer\bin\Debug\net7.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\Obidj\MyDirect\work_4sm\myProgect\VkProject\Presentation Layer\bin\Debug\net7.0\Microsoft.Extensions.Options.dll
+C:\Users\Obidj\MyDirect\work_4sm\myProgect\VkProject\Presentation Layer\bin\Debug\net7.0\Microsoft.Extensions.Primitives.dll
+C:\Users\Obidj\MyDirect\work_4sm\myProgect\VkProject\Presentation Layer\bin\Debug\net7.0\Npgsql.dll
+C:\Users\Obidj\MyDirect\work_4sm\myProgect\VkProject\Presentation Layer\bin\Debug\net7.0\Npgsql.EntityFrameworkCore.PostgreSQL.dll
+C:\Users\Obidj\MyDirect\work_4sm\myProgect\VkProject\Presentation Layer\bin\Debug\net7.0\BusinessLayer.dll
+C:\Users\Obidj\MyDirect\work_4sm\myProgect\VkProject\Presentation Layer\bin\Debug\net7.0\Database.dll
+C:\Users\Obidj\MyDirect\work_4sm\myProgect\VkProject\Presentation Layer\bin\Debug\net7.0\BusinessLayer.pdb
+C:\Users\Obidj\MyDirect\work_4sm\myProgect\VkProject\Presentation Layer\bin\Debug\net7.0\Database.pdb
+C:\Users\Obidj\MyDirect\work_4sm\myProgect\VkProject\Presentation Layer\obj\Debug\net7.0\Presentation Layer.csproj.AssemblyReference.cache
+C:\Users\Obidj\MyDirect\work_4sm\myProgect\VkProject\Presentation Layer\obj\Debug\net7.0\Presentation Layer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Obidj\MyDirect\work_4sm\myProgect\VkProject\Presentation Layer\obj\Debug\net7.0\Presentation Layer.AssemblyInfoInputs.cache
+C:\Users\Obidj\MyDirect\work_4sm\myProgect\VkProject\Presentation Layer\obj\Debug\net7.0\Presentation Layer.AssemblyInfo.cs
+C:\Users\Obidj\MyDirect\work_4sm\myProgect\VkProject\Presentation Layer\obj\Debug\net7.0\Presentation Layer.csproj.CoreCompileInputs.cache
+C:\Users\Obidj\MyDirect\work_4sm\myProgect\VkProject\Presentation Layer\obj\Debug\net7.0\Presentation Layer.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Obidj\MyDirect\work_4sm\myProgect\VkProject\Presentation Layer\obj\Debug\net7.0\Presentation Layer.RazorAssemblyInfo.cache
+C:\Users\Obidj\MyDirect\work_4sm\myProgect\VkProject\Presentation Layer\obj\Debug\net7.0\Presentation Layer.RazorAssemblyInfo.cs
+C:\Users\Obidj\MyDirect\work_4sm\myProgect\VkProject\Presentation Layer\obj\Debug\net7.0\staticwebassets\msbuild.Presentation Layer.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\Obidj\MyDirect\work_4sm\myProgect\VkProject\Presentation Layer\obj\Debug\net7.0\staticwebassets\msbuild.build.Presentation Layer.props
+C:\Users\Obidj\MyDirect\work_4sm\myProgect\VkProject\Presentation Layer\obj\Debug\net7.0\staticwebassets\msbuild.buildMultiTargeting.Presentation Layer.props
+C:\Users\Obidj\MyDirect\work_4sm\myProgect\VkProject\Presentation Layer\obj\Debug\net7.0\staticwebassets\msbuild.buildTransitive.Presentation Layer.props
+C:\Users\Obidj\MyDirect\work_4sm\myProgect\VkProject\Presentation Layer\obj\Debug\net7.0\staticwebassets.pack.json
+C:\Users\Obidj\MyDirect\work_4sm\myProgect\VkProject\Presentation Layer\obj\Debug\net7.0\staticwebassets.build.json
+C:\Users\Obidj\MyDirect\work_4sm\myProgect\VkProject\Presentation Layer\obj\Debug\net7.0\staticwebassets.development.json
+C:\Users\Obidj\MyDirect\work_4sm\myProgect\VkProject\Presentation Layer\obj\Debug\net7.0\scopedcss\bundle\Presentation Layer.styles.css
+C:\Users\Obidj\MyDirect\work_4sm\myProgect\VkProject\Presentation Layer\obj\Debug\net7.0\Presentation Layer.csproj.CopyComplete
+C:\Users\Obidj\MyDirect\work_4sm\myProgect\VkProject\Presentation Layer\obj\Debug\net7.0\Presentation Layer.dll
+C:\Users\Obidj\MyDirect\work_4sm\myProgect\VkProject\Presentation Layer\obj\Debug\net7.0\refint\Presentation Layer.dll
+C:\Users\Obidj\MyDirect\work_4sm\myProgect\VkProject\Presentation Layer\obj\Debug\net7.0\Presentation Layer.pdb
+C:\Users\Obidj\MyDirect\work_4sm\myProgect\VkProject\Presentation Layer\obj\Debug\net7.0\Presentation Layer.genruntimeconfig.cache
+C:\Users\Obidj\MyDirect\work_4sm\myProgect\VkProject\Presentation Layer\obj\Debug\net7.0\ref\Presentation Layer.dll
