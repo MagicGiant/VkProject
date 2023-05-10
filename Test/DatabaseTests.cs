@@ -26,13 +26,13 @@ public class DatabaseTests
     [Fact]
     public void SaveUser_NoException()
     {
-        UserBuilder userBuilder = new UserBuilder();
-        userBuilder
-            .SetLogin(new Login("Sherka"))
-            .SetPassword(new Password("Root"))
-            .SetGroupCode(GroupCode.User)
-            .SetGroupDestruction("a")
-            .SetStateDestruction("b")
-            .Build();
+        new Manager().SaveUser(
+            new UserBuilder()
+                .SetLogin(new Login("Sherka"))
+                .SetPassword(new Password("Root"))
+                .SetGroupCode(GroupCode.User)
+                .SetGroupDestruction("a")
+                .SetStateDestruction("b")
+                .Build());
     }
 }

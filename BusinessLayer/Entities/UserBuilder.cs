@@ -68,8 +68,6 @@ public class UserBuilder
         if (IsNull(_login, _password, _groupDestruction, _stateDestruction, _groupCode))
             throw new ArgumentNullException();
 
-        DateOnly createdDate = new DateOnly();
-
         UserGroupData userGroupData = new UserGroupData
         {
             Code = _groupCode,
@@ -83,37 +81,16 @@ public class UserBuilder
         };
 
 
-
-        using (MyContext context = new MyContext())
+        UserData userData = new UserData
         {
-            using (var transaction = context.Database.BeginTransaction())
-            {
-                try
-                {
-                    new UserGroupTransaction().Save(userGroupData);
-                    new UserStateTransaction().Save(userStateData);
-
-                    UserData userData = new UserData
-                    {
-                        CreatedDate = createdDate.ToString(),
-                        Login = _login,
-                        PasswordHashString = Password.GetHash(_password),
-                        IsAdmin = _groupCode == GroupCode.Admin,
-                        UserGroupId = userGroupData.Id,
-                        UserStateId = userStateData.Id
-                    };
-
-                    new UserDataTransaction().Save(userData);
-                    transaction.Commit();
-                    return new User(userData, userGroupData, userStateData);
-                }
-                catch (Exception e)
-                {
-                    transaction.Rollback();
-                    throw e;
-                }
-            }
-        }
+            CreatedDate = DateTime.Now.ToString(),
+            Login = _login,
+            PasswordHashString = Password.GetHash(_password),
+            IsAdmin = _groupCode == GroupCode.Admin,
+            UserGroupId = userGroupData.Id,
+            UserStateId = userStateData.Id
+        };
+        return new User(userData, userGroupData, userStateData);
     }
 
     private bool IsNull(params object[] args)

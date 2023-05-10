@@ -16,11 +16,11 @@ public class User
         UserStateData = userStateData;
     }
 
-    public UserData UserData { get;}
+    public UserData UserData { get; set; }
     
-    public UserGroupData UserGroupData { get;}
+    public UserGroupData UserGroupData { get; set; }
     
-    public UserStateData UserStateData { get; }
+    public UserStateData UserStateData { get; set; }
 
     public void MakeBlocked()
     {

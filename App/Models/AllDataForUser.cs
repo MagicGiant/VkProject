@@ -8,7 +8,7 @@ public class AllDataForUser
     
     public bool IsAdmin { get; set; }
 
-    public string GroupDestriction { get; set; }
+    public string GroupDescription { get; set; }
     
     public string StateDescription { get; set; }
 }

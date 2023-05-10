@@ -1,4 +1,5 @@
 ﻿using BusinessLayer.Exceptions;
+using Database;
 using Database.Models;
 using Database.Transactions;
 
@@ -6,6 +7,32 @@ namespace BusinessLayer.Entities;
 
 public class Manager
 {
+    public void SaveUser(User user)
+    {
+        using (MyContext context = new MyContext())
+        {
+            using (var transaction = context.Database.BeginTransaction())
+            {
+                try
+                {
+                    new UserGroupTransaction().Save(user.UserGroupData);
+                    new UserStateTransaction().Save(user.UserStateData);
+
+                    user.UserData.UserGroupId = user.UserGroupData.Id;
+                    user.UserData.UserStateId = user.UserStateData.Id;
+
+                    new UserDataTransaction().Save(user.UserData);
+                    transaction.Commit();
+                }
+                catch (Exception e)
+                {
+                    transaction.Rollback();
+                    throw e;
+                }
+            }
+        }
+    }
+    
     public User GetUser(Login login)
     {
         UserDataTransaction userDataTransaction = new UserDataTransaction();
