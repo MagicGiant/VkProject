@@ -5,9 +5,9 @@ using Database.Transactions;
 
 namespace BusinessLayer.Entities;
 
-public class Manager
+public static class Manager
 {
-    public void SaveUser(User user)
+    public static void SaveUser(User user)
     {
         using (MyContext context = new MyContext())
         {
@@ -33,7 +33,7 @@ public class Manager
         }
     }
     
-    public User GetUser(Login login)
+    public static User GetUser(Login login)
     {
         UserDataTransaction userDataTransaction = new UserDataTransaction();
         UserData userData = userDataTransaction.GetByLogin(login.ToString());
@@ -41,7 +41,7 @@ public class Manager
         return GetUser(userData);
     }
 
-    public User GetUser(UserData userData)
+    public static User GetUser(UserData userData)
     {
         UserGroupData userGroupData = new UserGroupTransaction().GetById(userData.UserGroupId);
         UserStateData userStateData = new UserStateTransaction().GetById(userData.UserStateId);
@@ -49,7 +49,16 @@ public class Manager
         return new User(userData, userGroupData, userStateData);
     }
 
-    public ICollection<User> GetUsers()
+    public static User GetUserAndCheckPassword(Login login, Password password)
+    {
+        User user = GetUser(login);
+        if (user.UserData.PasswordHashString != password.toHashString())
+            throw ManagerException.WrongLoginOrPasswordException();
+
+        return user;
+    }
+
+    public static ICollection<User> GetUsers()
     {
         UserDataTransaction userDataTransaction = new UserDataTransaction();
         List<User> users = new List<User>();
@@ -60,23 +69,23 @@ public class Manager
         return users;
     }
 
-    public void MakeBlocked(Login login)
+    public static void MakeBlocked(Login login)
     {
         GetUser(login).MakeBlocked();
     }
 
-    public void MakeBlocked(UserData userData) 
+    public static void MakeBlocked(UserData userData) 
     {
         GetUser(userData).MakeBlocked();
         UserBuilder builder = new ();
     }
 
-    public void MakeActive(Login login)
+    public static void MakeActive(Login login)
     {
         GetUser(login).MakeActive();
     }
 
-    public void MakeActive(UserData userData)
+    public static void MakeActive(UserData userData)
     {
         GetUser(userData).MakeActive();
     }

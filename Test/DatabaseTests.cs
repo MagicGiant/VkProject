@@ -26,7 +26,7 @@ public class DatabaseTests
     [Fact]
     public void SaveUser_NoException()
     {
-        new Manager().SaveUser(
+        Manager.SaveUser(
             new UserBuilder()
                 .SetLogin(new Login("Sherka"))
                 .SetPassword(new Password("Root"))

@@ -15,13 +15,13 @@ public class HomeController : Controller
     }
 
     [HttpGet]
-    public ActionResult Registration()
+    public ActionResult Authorisation()
     {
         return View();
     }
 
     [HttpPost]
-    public string Registration(AllDataForUser data)
+    public string Authorisation(AllDataForUser data)
     {
         User user = new UserBuilder()
             .SetLogin(new Login(data.Login))
@@ -30,7 +30,19 @@ public class HomeController : Controller
             .SetGroupDestruction(data.StateDescription)
             .SetStateDestruction(data.StateDescription)
             .Build();
-        new Manager().SaveUser(user);
+        Manager.SaveUser(user);
         return JsonSerializer.Serialize(user);
+    }
+
+    [HttpGet]
+    public ActionResult SingIn()
+    {
+        return View();
+    }
+
+    [HttpPost]
+    public string SingIn(SingInPasswordAndLogin data)
+    {
+        return JsonSerializer.Serialize(data);
     }
 }
