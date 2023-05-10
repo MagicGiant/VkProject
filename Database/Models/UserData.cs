@@ -11,13 +11,13 @@ public class UserData
     public long Id { get; set; }
     
     [Column("login")]
-    public String Login { get; set; }
+    public string Login { get; set; }
     
     [Column("password")]
-    public String PasswordHashString { get; set; }
+    public byte[] PasswordHashString { get; set; }
     
     [Column("created_date")]
-    public String CreatedDate { get; set; }
+    public string CreatedDate { get; set; }
     
     [Column("user_group_id")]
     public long UserGroupId { get; set; }

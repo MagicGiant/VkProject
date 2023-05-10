@@ -21,17 +21,15 @@ public class Password
         this._password = password;
     }
 
-    public string toHashString()
+    public byte[] toHashString()
     {
         return GetHash(this._password);
     }
     
-    public static string GetHash(string password)
+    public static byte[] GetHash(string password)
     {
-        byte[] hashCode;
         using (SHA256 sha256 = SHA256.Create())
-            hashCode = sha256.ComputeHash(Encoding.ASCII.GetBytes(password));
-        return Encoding.ASCII.GetString(hashCode);
+            return sha256.ComputeHash(Encoding.ASCII.GetBytes(password));
     }
 
     public override string ToString()
