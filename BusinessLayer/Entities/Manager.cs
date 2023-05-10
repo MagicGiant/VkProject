@@ -52,7 +52,7 @@ public static class Manager
     public static User GetUserAndCheckPassword(Login login, Password password)
     {
         User user = GetUser(login);
-        if (user.UserData.PasswordHashString != password.toHashString())
+        if (!user.UserData.PasswordHashString.SequenceEqual(password.toHashString()))
             throw ManagerException.WrongLoginOrPasswordException();
 
         return user;

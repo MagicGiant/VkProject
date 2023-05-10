@@ -14,7 +14,7 @@ public class UserData
     public string Login { get; set; }
     
     [Column("password")]
-    public byte[] PasswordHashString { get; set; }
+    public List<byte> PasswordHashString { get; set; }
     
     [Column("created_date")]
     public string CreatedDate { get; set; }

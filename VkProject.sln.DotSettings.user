@@ -1,10 +1,15 @@
 ﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
 	<s:String x:Key="/Default/Environment/Hierarchy/Build/BuildTool/CustomBuildToolPath/@EntryValue">C:\Users\Obidj\.dotnet\sdk\7.0.101\MSBuild.dll</s:String>
-	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=2e0211f2_002De126_002D4a3d_002D9c8a_002D3ae7dc33fdc9/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="SaveUser_NoException" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=2e0211f2_002De126_002D4a3d_002D9c8a_002D3ae7dc33fdc9/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="SaveUser_NoException" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
   &lt;TestAncestor&gt;&#xD;
     &lt;TestId&gt;xUnit::7FA78C23-E746-40BD-BE1F-CE3BDB89BB5F::net7.0::Test.DatabaseTests.SaveUser_NoException&lt;/TestId&gt;&#xD;
     &lt;TestId&gt;xUnit::7FA78C23-E746-40BD-BE1F-CE3BDB89BB5F::net7.0::Test.DatabaseTests.GetUserWithLogin_NoException&lt;/TestId&gt;&#xD;
     &lt;TestId&gt;xUnit::7FA78C23-E746-40BD-BE1F-CE3BDB89BB5F::net7.0::Test.DatabaseTests.CheckHashPassword_NoException&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=772cd6d6_002D98ec_002D4c90_002D8270_002Dba2c3b0aeab9/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="GetUserWithLogin_NoException" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;xUnit::7FA78C23-E746-40BD-BE1F-CE3BDB89BB5F::net7.0::Test.DatabaseTests.GetUserWithLogin_NoException&lt;/TestId&gt;&#xD;
   &lt;/TestAncestor&gt;&#xD;
 &lt;/SessionState&gt;</s:String>
 	
