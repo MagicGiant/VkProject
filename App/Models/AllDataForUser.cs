@@ -2,7 +2,13 @@
 
 public class AllDataForUser
 {
-    public string login { get; set; }
+    public string Login { get; set; }
     
-    public string password { get; set; }
+    public string Password { get; set; }
+    
+    public bool IsAdmin { get; set; }
+
+    public string GroupDestriction { get; set; }
+    
+    public string StateDescription { get; set; }
 }

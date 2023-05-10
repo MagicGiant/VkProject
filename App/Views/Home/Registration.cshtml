@@ -13,11 +13,34 @@
     <h3>Registration</h3>
     <form method="post" action="">
         <table>
-            <tr><td><p>Login</p></td>
-                <td><input type="text" name="Login" /> </td></tr>
-            <tr><td><p>Password</p></td><td> 
-                <input type="text" name="Address" /> </td></tr>
-            <tr><td><input type="submit" value="Enter" /> </td><td></td></tr>
+            <tr>
+                <td>
+                    <p>Login:</p>
+                </td>
+                <td><input type="text" name="Login"/> </td>
+            </tr>
+            <tr>
+                <td><p>Password:</p></td>
+                <td><input type="text" name="Address"/></td>
+            </tr>
+            <tr>
+                <td><p>Admin or user:</p></td>
+                <td>
+                    <input type="radio" name="IsAdmin" value=false> User<Br>
+                    <input type="radio" name="IsAdmin" value=true> Admin<Br>
+                </td>
+            </tr>
+            <tr>
+                <td><p>User group description:</p></td>
+                <td><input type="text" name="GroupDescription"/></td>
+            </tr>
+            <tr>
+                <td><p>User state description:</p></td>
+                <td><input type="text" name="StateDescription"/></td>
+            </tr>
+            <tr>
+                <td><input type="submit" value="Enter"/> </td>
+            </tr>
         </table>
     </form>
 </div>

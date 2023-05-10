@@ -1,4 +1,5 @@
 ﻿using System.Diagnostics;
+using System.Text.Json;
 using Microsoft.AspNetCore.Mvc;
 using App.Models;
 
@@ -20,6 +21,6 @@ public class HomeController : Controller
     [HttpPost]
     public string Registration(AllDataForUser data)
     {
-        return $"login is {data.login}";
+        return JsonSerializer.Serialize(data);
     }
 }
