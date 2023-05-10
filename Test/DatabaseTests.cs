@@ -10,6 +10,20 @@ namespace Test;
 public class DatabaseTests
 {
     [Fact]
+    public void GetUserWithLogin_NoException()
+    {
+        Manager.GetUserAndCheckPassword(new Login("Sherka"), new Password("Root"));
+    }
+
+    [Fact]
+    public void CheckHashPassword_NoException()
+    {
+        string str = "Root";
+        Password.GetHash(str);
+        Assert.Equal(Password.GetHash(str), Password.GetHash(str));
+    }
+
+    [Fact]
     public void SaveUserGroup_NoException()
     {
         UserGroupData userGroupData = new UserGroupData { Code = GroupCode.User, Description = "lol" };

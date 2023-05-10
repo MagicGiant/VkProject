@@ -1,5 +1,4 @@
-﻿using System.Diagnostics;
-using System.Text.Json;
+﻿using System.Text.Json;
 using Microsoft.AspNetCore.Mvc;
 using App.Models;
 using BusinessLayer.Entities;
@@ -15,13 +14,13 @@ public class HomeController : Controller
     }
 
     [HttpGet]
-    public ActionResult Authorisation()
+    public ActionResult Registration()
     {
         return View();
     }
 
     [HttpPost]
-    public string Authorisation(AllDataForUser data)
+    public string Registration(AllDataForUser data)
     {
         User user = new UserBuilder()
             .SetLogin(new Login(data.Login))
@@ -43,6 +42,7 @@ public class HomeController : Controller
     [HttpPost]
     public string SingIn(SingInPasswordAndLogin data)
     {
-        return JsonSerializer.Serialize(data);
+        User user = Manager.GetUserAndCheckPassword(new Login(data.Login), new Password(data.Password));
+        return JsonSerializer.Serialize(user);
     }
 }
